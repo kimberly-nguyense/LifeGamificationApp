@@ -13,15 +13,15 @@ A desktop application inspired by The Sims that helps track your energy, focus, 
 ## Tech Stack
 
 - C# and WPF for the UI
-- .NET Framework
-- Entity Framework for the database stuff
+- .NET 8.0
+- Entity Framework for database operations
 - Followed MVVM pattern (Model-View-ViewModel)
 
 ## Setup Instructions
 
 ### Requirements
 - Visual Studio 2022
-- .NET 7.0
+- .NET 8.0
 - Windows 10 or 11
 
 ### How to Run
@@ -33,8 +33,9 @@ A desktop application inspired by The Sims that helps track your energy, focus, 
 
 This is my first major project after graduating! I'm building this as a portfolio piece to show what I've learned and to practice C# development. Currently working on:
 
-- [x] Setting up the basic window overlay
-- [x] Creating the status bar UI
+- [x] Setting up project structure with Clean Architecture
+- [ ] Setting up the basic window overlay
+- [ ] Creating the status bar UI
 - [ ] Adding database storage
 - [ ] Implementing point system
 - [ ] Building achievement system
@@ -43,13 +44,12 @@ More features planned based on time and feedback!
 
 ## Project Structure
 
-I'm trying to follow clean architecture principles:
-
+Following clean architecture principles:
 ```
 LifeGamificationApp/
-├── Core/               # Business logic, models
-├── Infrastructure/     # Database, external services
-└── UI/                 # WPF application
+├── LifeGamificationApp.Core/            # Domain models, interfaces, business logic
+├── LifeGamificationApp.Infrastructure/  # Data access, external services
+└── LifeGamificationApp.UI/              # WPF application, ViewModels, Views
 ```
 
 ## Screenshots
@@ -63,6 +63,7 @@ As someone with ADHD, I've always been more productive when things feel game-lik
 Key things I'm learning:
 - WPF development
 - Working with databases in C#
+- Clean Architecture principles
 - Software architecture patterns
 - How to plan and execute a project from scratch
 
